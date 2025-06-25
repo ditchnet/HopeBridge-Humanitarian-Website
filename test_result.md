@@ -107,15 +107,18 @@ user_problem_statement: "Build a modern, responsive fundraising website for a hu
 backend:
   - task: "API Health Check Endpoint"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Implemented /api/health endpoint for basic health check"
+      - working: true
+        agent: "testing"
+        comment: "Health check endpoint tested successfully. Returns status 200 with correct JSON response containing 'status' and 'message' fields."
   
   - task: "Donation API Endpoints"
     implemented: true
