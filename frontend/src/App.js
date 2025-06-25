@@ -641,7 +641,9 @@ function App() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
               <p className="text-gray-300 mb-2">Email: contact@hopebridge.org</p>
-              <p className="text-gray-300 mb-4">Phone: +1 (555) 123-HOPE</p>
+              <p className="text-gray-300 mb-4">Phone: +1 (623) 387-3621</p>
+              <p className="text-gray-300 mb-4">💳 Wallet (BTC): bc1qv7gpktagj9z54zcluadlfftmhlwgwedht04apk</p>
+
               <p className="text-sm text-gray-400">
                 © 2024 HopeBridge. All rights reserved.
               </p>
