@@ -122,15 +122,18 @@ backend:
   
   - task: "Donation API Endpoints"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Implemented POST /api/donations to create mock donations and GET /api/donations to retrieve donations list. Uses MongoDB for storage."
+      - working: true
+        agent: "testing"
+        comment: "Donation API endpoints tested successfully. POST /api/donations correctly creates donations with all required fields and returns 200 status. GET /api/donations returns the list of donations. Validation works correctly for required fields and email format."
   
   - task: "Contact Form API Endpoints"
     implemented: true
