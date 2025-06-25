@@ -152,15 +152,18 @@ backend:
   
   - task: "Statistics API Endpoint"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Implemented GET /api/stats to provide donation statistics (total donations, total amount, total contacts)"
+      - working: true
+        agent: "testing"
+        comment: "Statistics API endpoint tested successfully. GET /api/stats returns correct statistics including total_donations, total_amount, and total_contacts. The endpoint correctly aggregates data from MongoDB collections."
 
 frontend:
   - task: "Homepage with Hero Section"
